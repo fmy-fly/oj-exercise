@@ -39,7 +39,7 @@ public class Main {
             for (int aa = 1; aa <= 10; aa++) {
                 for (int bb = 1; bb <= 10; bb++) {
                     for (int cc = 1; cc <= 10; cc++) {
-                        for (int d = 1; d <= 10; d++) {
+                        for (int d = 1; d <= 10; d++) {                        // 暴力枚举
                             int[] c = {0, aa, bb, cc, d};
                             if (compare(a, c) && compare(b, a) && compare(c, b)) {
                                 res = true;
