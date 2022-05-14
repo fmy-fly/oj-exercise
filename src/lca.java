@@ -62,10 +62,10 @@ public class lca {
         }
         return fa[a][0];
     }
-    public static void main(String [] args) throws Exception{
+    public static void main(String [] args) throws Exception {
         n = nextInt();
         int root = 0;
-        for (int i = 1 ; i <= n ;i++){
+        for (int i = 1; i <= n; i++) {
             int a = nextInt(), b = nextInt();
             if (b == -1) root = a;
             else {
@@ -75,19 +75,15 @@ public class lca {
         }
         bfs(root);
         m = nextInt();
-        while(m-- > 0 ){
+        while (m-- > 0) {
             int a = nextInt(), b = nextInt();
-            int p = lca(a,b);
-            if ( p == a)System.out.println(1);
-            else  if ( p == b)System.out.println(2);
+            int p = lca(a, b);
+            if (p == a) System.out.println(1);
+            else if (p == b) System.out.println(2);
             else System.out.println(0);
         }
 
     }
-
-
-
-
 
 
 }
